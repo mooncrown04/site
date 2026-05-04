@@ -1,2 +1,115 @@
-<h1>Selam Dünya!</h1>
-<p>Bu benim ilk GitHub Pages sitem.</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title>LG MKVOD18</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel='stylesheet' type='text/css' href = 'css/style8.css'/>
+<link rel='stylesheet' type='text/css' href= 'jslgvkeyboard_2.1/LgVKeyboard.css'/>
+
+<script id="mainVKScript" type="text/javascript" src="jslgvkeyboard_2.1/LgVKeyboard.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" language="javascript" src='js/deger.js'></script>
+<script type="text/javascript" language="javascript" src='js/swfobject.js'></script>
+
+<script type="text/javascript" language="javascript" src='https://dl.dropbox.com/s/m81rrc9dgbffwbl/lang.js'></script>
+<script type="text/javascript" language="javascript" src='https://dl.dropbox.com/s/2d7ywg544izkgbi/yen.js'></script>
+<script type="text/javascript" language="javascript" src='https://dl.dropbox.com/s/5ssyo9mq99vv7bf/mk.js'></script>
+<object type="application/x-netcast-info" id="device" width="0" height="0" style="float: left; visibility: hidden;"></object>
+</head>
+
+<body>
+	<div id="sound_player" style="display:none;"></div>
+	<div id="player" style="display:none;" onclick="status_show();" ondblclick ="red();"></div>
+	<div id="player_bar" onclick="activatePlayer_m();">
+		<div id="progress" onmouseover="showJump();" onmousemove="moveJump();" onmouseout="removeJump();" onclick="doRandomAccess();">
+			<div id="progressbar_total"></div>
+			<div id="progressbar_buffer"></div>
+			<div id="progressbar_progress"></div>
+		</div>
+		<!--<div id="second_bar">-->
+			<div id="cover_place"><img id="cover" onclick="broadcast_func();" src=""/></div>
+				<!--<div id="title_wrapper">-->
+					<div id="play_title"></div>
+					<div id="saat">00:00</div>
+					<div id="play_bitrate"></div>
+					<div id="set_time"></div>
+			<!--</div>-->
+			
+			<!--<div id="timer">-->
+				<div id="playTimeCur">00:00:00</div>
+				<div id="playTimeTotal">00:00:00</div>
+				<div id="buffer"></div>
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div id="help_navi">-->
+			<div id="player_buttons"></div>
+			<div id="tv_buttons"></div>
+			<div id="player_controls"></div>
+		<!--</div>			-->
+	</div>
+	<div id="main">
+		<div id="more_info"></div>           
+		<div id="top"><div id="playlistname" onclick="mbutton(10);"></div><div id="datetime" onclick="mbutton(8);"></div>
+		
+		<!--	<div id="Weather" ></div>
+	        <div id="Weather_t" ></div>
+		    <div id='time_Date'></div>
+            <div id='time_clock'>00:00</div>
+            <div id='time_day'></div>-->
+		</div>
+
+		<div id="channelbox">
+			
+			<ul id="channelList"></ul>
+			<div id="duyuru"></div>
+			<div id="once_sonra">
+				<button id="os" onclick="select_page(-1);"></button>
+				<span style="border:0px solid #ffffff;"></span>
+				<button id="ss" onclick="select_page(1);"></button>
+			</div>
+			
+		</div>
+		<div id="bottom">
+			<div id="button_back" onclick="mbutton(1);"><span id="back"></span></div>			
+			<div id="button_red" onclick="mbutton(2);"><span id="red"></span></div>
+			<div id="button_green" onclick="mbutton(3);"><span id="green"></span></div>
+			<div id="button_yellow" onclick="mbutton(4);"><span id="yellow"></span></div>
+			<div id="button_blue" onclick="mbutton(5);"><span id="blue"></span></div>
+			<div id="button_rew" onclick="mbutton(6);"><span id="rew"></span></div>
+			<div id="button_ff" onclick="mbutton(7);"><span id="ff"></span></div>
+			<a id="mk1" onclick="reload_func();"><div>&nbsp;MKVOD8&nbsp;&nbsp;</div><img src="img/mk_vod8.png"></img></a>		
+		</div>		
+	</div>
+	<div id="loaderm" style="display:none"><br />
+	<img src="img/loaderm.gif" alt="loading"/><br />
+	<div id="loadMessage">Loading...</div>
+	</div>
+	<div id="status"></div>
+	<div id="bilgi"></div>
+	<div id="sifre" style="display:none;"></div>
+	<div id="ara" style="display:none;"></div>
+	<div id="selectbox" style="display:none;"></div>
+	<div id="mysearch" style="display:none;" onclick="mbutton(8);"></div>
+	<div id="result"></div>
+	<div id="loader"  style="display:none;"></div>
+	<div id="favdiv"  style="display:none;"></div>
+	
+
+	
+	<div id="vod1"  style="display:none;"></div>
+	<div id="vod2"  style="display:none;"></div>
+	<div id="vod3"  style="display:none;"></div>
+	<div id="vod4"  style="display:none;"></div>
+	<div id="vod5"  style="display:none;"></div>
+	<div id="vod6"  style="display:none;"></div>
+	<div id="vod7"  style="display:none;"></div>
+	<div id="vod8"  style="display:none;"></div>
+	<div id="vod9"  style="display:none;"></div>
+	<div id="vod10"  style="display:none;"></div>
+	<div id="vod11"  style="display:none;"></div>
+
+</body>	
+<script type="text/javascript" >
+$(document).ready(function(){basla();});
+</script>
+</html>
